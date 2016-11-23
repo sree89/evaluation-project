@@ -9,369 +9,222 @@
     <meta name="author" content="">
     <title>AP MONITORING AND EVALUATION PROJECT</title>
     <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        
-        #map {
-            top: 0;
-            left: 0;
-            margin-left: -5%;
-            
-        }
-        /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-        
-        .update {
-            height: 50px;
-            width: 100%;
-            background: lightyellow;
-            border: 2px solid yellow;
-        }
-        
-        .update p {
-            text-align: center;
-            margin-top: 10px;
-            font-size: 20px;
-            font-weight: bold;
-        }
-        
-        
- #bg {
-     background: linear-gradient(#FDFC47,#24FE41);
-    
- }       
 
-.grad {
-    height: 50px;
-    width: 100%;
-    background: -webkit-linear-gradient(225deg,#f4ff4c, #ff9900);
-    background: -moz-linear-gradient(225deg,#f4ff4c, #ff9900);
-    background: -o-linear-gradient(225deg,#f4ff4c, #ff9900);
-    background: linear-gradient(225deg,#f4ff4c, #ff9900);
-    margin-top: 2%;
-    border-radius: 10px;
-    /*box-shadow: 3px 3px 8px darkgrey;*/
-}
+    <link rel="stylesheet" href="css/style.css">
 
-.arrow {
-    width: 180px;
-    height: 40px;
-    background: linear-gradient(90deg,#f4ff4c, #ff9900);
-    position: relative;
-    margin-top: 5px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    margin-left: 20px;
-}
-
-.arrow:before {
-   content:"";
-   position: absolute;
-   right: 100%;
-   top: 0px;
-   width: 0;
-   height: 0;
-   border-top: 20px solid transparent;
-   border-right: 26px solid  #f4ff4c;
-   border-bottom:20px solid transparent;
-}
-
-.arrow p {
-    margin-top: 5px;
-    position: absolute;
-    margin-left: 30px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: century gothic;
-    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
-    /*
-	color: #9c8468;
-	opacity: 0.3;
-	font: 80px 'Museo700';*/
-}
-
-
-.hit-the-floor {
-color: #000;
--background-color: #e8e8e8; text-shadow: rgba(255,255,255,.1) -1px -1px 1px,rgba(0,0,0,.5) 1px 1px 1px;
-margin-top: 4%;
-}
-
-.hit-the-floor {
-  text-align: center;
-}
-
-#dry, #wet, #hazard {
-    width: 100px;
-    /*height: 50px;*/
-    border-radius: 10px;
-    background-color: #f1f1f1;
-    border: 5px solid #f4ff4c;
-    /*box-shadow: 5px 5px 8px darkgrey;*/
-    z-index: 999;
-    position: relative;
-    
-    }
-
-#dry h2, #wet h2, #hazard h2 {
-    margin-top: 5px;
-}
-
-
-.d, .w, .h{
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 2%;
-    
-}
-.d {
-    margin-left: 60px;
-   }
-.w {
-    margin-left: 80px;
-}
-.h {
-    margin-left: 65px;
-}
-
-.note {
-    height: 40px;
-    width: 100%;
-    background: lightyellow;
-    border: 4px solid #F5F645;
-    border-radius: 10px;
-     z-index: -2;
-     margin-top: -12px;
-     position: relative;    
-}
-
-.note p {
-    margin-top: 10px;
-    margin-left: 10px;
-   
-}
-
-.note1 {
-    height: 40px;
-    width: 100%;
-    background: lightyellow;
-    border: 4px solid #F5F645;
-    border-radius: 10px;
-     z-index: -2;
-     margin-top: -6px;
-     position: relative;    
-}
-
-.note1 p {
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.note2 {
-    /*height: 80px;*/
-    width: 100%;
-    margin-top: -20px;
-    background: lightyellow;
-    border: 4px solid #F5F645;
-    border-radius: 10px;
-    z-index: -99;
-    position: relative;    
-}
-
-.note2 p {
-    margin-top: 68px;
-    margin-left: 10px;
-}
-
-#para {
-    margin-top: -95px;
-}
-
-/* 11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 */        
-</style>
-    
-    
 </head>
 
 <body>
- 
+
     <div class="containter">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-xs-12">
                 <div class="navbar navbar-default">
                     <!-- navbar-fixed-top to be used -->
                     <div class="navbar-header">
-                      <!-- <a class="navbar-brand" href="#">Andhra Pradesh</a> -->
+                        <!-- <a class="navbar-brand" href="#">Andhra Pradesh</a> -->
+                        
                     </div>
                 </div>
-                <div class="update" style="margin-top:-20px;">
+                <div class="update">
                     <p>WELCOME TO AP STATE MONITORING AND EVALUATION STATISTICS</p>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-6 col-md-6 col-xs-6">
-                <div class="well well-lg" id="bg" style="height:auto; width:100%; margin-top:2%;">
+                <div class="well well-lg" id="bg">
                     <div id="map" class="andhra"></div>
                 </div>
                 <!-- end of well -->
             </div>
             <!-- end of cols-6 -->
-    <!-- *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ RIGHT SIDE PANE STARTS *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ -->
+            
+            <!-- *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ RIGHT SIDE PANE STARTS *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+ -->
             <div class="col-lg-6 col-md-6 col-xs-12">
 
-        <!-- row 1 -->
+                <!-- row 1 -->
 
-               <div class="row grad">
-                   <div class="col-lg-4">
-                       <h2 class="hit-the-floor">3%</h2>
-                        </div> <!-- dynamic values div -->
+                <div class="row grad">
+                    <div class="col-lg-4">
+                        <h2 class="hit-the-floor">3%</h2>
+                    </div>
+                    <!-- dynamic values div -->
 
-                   <div class="col-lg-4"> 
-                       
-                       </div> <!-- note div constant -->
- 
-                   <div class="col-lg-4"> 
+                    <div class="col-lg-4">
 
-                       <div class="arrow">
-    <p> Attendance </p>
-                       </div>
-                       
-                       </div> <!-- arrow div consists of data-->
+                    </div>
+                    <!-- note div constant -->
 
-<div class="row">
-<div class="col-lg-12">
-    <div class="note"><p>Total absentees in state</p></div>
-</div>
-</div>
+                    <div class="col-lg-4">
 
-                   </div> 
-<!-- row 2 -->
+                        <div class="arrow">
+                            <p> Attendance </p>
+                        </div>
+
+                    </div>
+                    <!-- arrow div consists of data-->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="note">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit consectetur adipisicing elit.. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- row 2 -->
 
                 <div class="row grad" style="margin-top:40px;">
-                   <div class="col-lg-4"> 
-                       <h2 class="hit-the-floor">8%</h2>
-                       </div> <!-- dynamic values div -->
-                   
-                   <div class="col-lg-4"> 
-                       
-                       </div> <!-- note div constant -->
-                   
-                   <div class="col-lg-4">
-                       
-                       <div class="arrow">
-    <p> Punctuality </p>
-                       </div>
+                    <div class="col-lg-4">
+                        <h2 class="hit-the-floor">8%</h2>
+                    </div>
+                    <!-- dynamic values div -->
 
-                        </div> <!-- arrow div consists of data-->
-                        <div class="row">
-<div class="col-lg-12">
-    <div class="note"><p>Total late comers in state</p></div>
-</div>
-</div>
-                   </div>
+                    <div class="col-lg-4">
 
+                    </div>
+                    <!-- note div constant -->
 
+                    <div class="col-lg-4">
 
-<!-- row 4 -->
+                        <div class="arrow">
+                            <p> Punctuality </p>
+                        </div>
 
-                    <div class="row grad" style="margin-top:40px;">
-                   <div class="col-lg-4"> 
-                       <h2 class="hit-the-floor">6.5 hrs</h2>
-                       </div> <!-- dynamic values div -->
-                   
-                   <div class="col-lg-4"> 
-                       <!--<p class="info">Avg time taken to clear complaints</p> -->
-                       </div> <!-- note div constant -->
-                  
-                   <div class="col-lg-4"> 
-                       
-                       <div class="arrow">
-    <p> Response </p>
-                       </div>
-                       
-                       </div> <!-- arrow div consists of data-->
-                       <div class="row">
-<div class="col-lg-12">
-    <div class="note"><p>Average time taken to respond to a complaint</p></div>
-</div>
-</div>
-                   </div>
-
-<!-- row 5 -->
-
-                    <div class="row grad" style="margin-top:40px;">
-                   <div class="col-lg-4"> 
-                       <img src="images/4_star.png" height="25px" style="margin-top:12px; margin-left:25px;"/>
-                       </div> <!-- dynamic values div -->
-                   <div class="col-lg-4"> </div> <!-- note div constant -->
-                   <div class="col-lg-4">
-                       
-                       <div class="arrow">
-    <p> Feedback </p>
-                       </div>
-                       
-                        </div> <!-- arrow div consists of data-->
-
-    <div class="row">
-<div class="col-lg-12">
-    <div class="note1"><p>Feedback by Ap state citizens for our work</p></div>
-</div>
-</div>
-                        
-                   </div>  
+                    </div>
+                    <!-- arrow div consists of data-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="note">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit consectetur adipisicing elit.. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
 
-<!-- row 3-->
 
-                    <div class="row grad" style="margin-top:40px;">
+                <!-- row 4 -->
 
-                   <div class="col-lg-8"> 
+                <div class="row grad" style="margin-top:40px;">
+                    <div class="col-lg-4">
+                        <h2 class="hit-the-floor">6.5 hrs</h2>
+                    </div>
+                    <!-- dynamic values div -->
 
-                 <div class="row header">
-                    
-                     <div class="col-lg-2 col-lg-offset-1 d" style="color:brown;"> DRY </div>
-                     <div class="col-lg-2 col-lg-offset-1 w" style="color:green;"> WET </div>
-                     <div class="col-lg-2 col-lg-offset-1 h" style="color:red;"> HAZARD </div>
-                                        
-                     </div>      
-                       
-                       
-                       </div> <!-- dynamic values div -->
+                    <div class="col-lg-4">
+                        <!--<p class="info">Avg time taken to clear complaints</p> -->
+                    </div>
+                    <!-- note div constant -->
 
-                  
+                    <div class="col-lg-4">
 
-                   <div class="col-lg-4">
-                       
-<div class="arrow">
-    <p> Wastage </p>
-                       </div>
+                        <div class="arrow">
+                            <p> Response </p>
+                        </div>
 
-                        </div> <!-- arrow div consists of data-->
+                    </div>
+                    <!-- arrow div consists of data-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="note">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit consectetur adipisicing elit.. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="row">
-<div class="col-lg-12">
-    <div class="note2"><p>Feedback by Ap state citizens for our work</p></div>
-</div>
-</div>
+                <!-- row 5 -->
 
-<div class="row" id="wastageValues">
-<div id="para">
-<div class="col-lg-2 col-lg-offset-1" id="dry"><h2 class="hit-the-floor"> 6% </h2></div>
-<div class="col-lg-2 col-lg-offset-1" id="wet"><h2 class="hit-the-floor"> 2% </h2></div>
-<div class="col-lg-2 col-lg-offset-1" id="hazard"><h2 class="hit-the-floor"> 2% </h2></div>
-</div> <!-- end of para -->
-</div>
+                <div class="row grad" style="margin-top:40px;">
+                    <div class="col-lg-4">
+                        <img src="images/4_star.png" height="25px" style="margin-top:12px; margin-left:25px;" />
+                    </div>
+                    <!-- dynamic values div -->
+                    <div class="col-lg-4"> </div>
+                    <!-- note div constant -->
+                    <div class="col-lg-4">
+
+                        <div class="arrow">
+                            <p> Feedback </p>
+                        </div>
+
+                    </div>
+                    <!-- arrow div consists of data-->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="note1">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit consectetur adipisicing elit.. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
 
-                   </div>  
+                <!-- row 3-->
+
+                <div class="row grad" style="margin-top:40px;">
+
+                    <div class="col-lg-8">
+
+                        <div class="row header">
+
+                            <div class="col-lg-2 col-lg-offset-1 d" style="color:brown;"> DRY </div>
+                            <div class="col-lg-2 col-lg-offset-1 w" style="color:green;"> WET </div>
+                            <div class="col-lg-2 col-lg-offset-1 h" style="color:red;"> HAZARD </div>
+
+                        </div>
 
 
-<!-- end of rows -->
+                    </div>
+                    <!-- dynamic values div -->
+
+
+
+                    <div class="col-lg-4">
+
+                        <div class="arrow">
+                            <p> Wastage </p>
+                        </div>
+
+                    </div>
+                    <!-- arrow div consists of data-->
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="note2">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit consectetur adipisicing elit.. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="wastageValues">
+                        <div id="para">
+                            <div class="col-lg-2 col-lg-offset-1" id="dry">
+                                <h2 class="hit-the-floor"> 6% </h2>
+                            </div>
+                            <div class="col-lg-2 col-lg-offset-1" id="wet">
+                                <h2 class="hit-the-floor"> 2% </h2>
+                            </div>
+                            <div class="col-lg-2 col-lg-offset-1" id="hazard">
+                                <h2 class="hit-the-floor"> 2% </h2>
+                            </div>
+                        </div>
+                        <!-- end of para -->
+                    </div>
+
+
+                </div>
+
+
+                <!-- end of rows -->
 
             </div>
             <!-- end of cols-6 -->
@@ -382,7 +235,7 @@ margin-top: 4%;
     <!-- end of .container -->
     <script src="js/raphael-min.js">
 </script>
-    <script src="js/map.js">
+    <script src="js/mapresize.js">
 </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
